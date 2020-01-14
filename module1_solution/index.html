@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='LunchCheck'>
+<head>
+	<title>I'm hungry</title>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+	<script src="angular.min.js"></script>
+	<script src="app1.js"></script>
+	<link rel="stylesheet" type="text/css" href="style/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body>
+	<div class="container" ng-controller='LunchCheckController'>
+		<h1 class="text-center"><strong>What you want to eat<strong></h1>
+		<h4 class="text-center">Empty items as <q>, ,</q> are not taken into account</h2>
+		<div class="form-group">
+			<input id="lunch-menu" type="text" placeholder="List of Food" class="form-control" ng-model="lista">
+		</div>
+		<div class="form-group">
+			<button class="btn btn-default" ng-click="Conta()">Check</button>
+		</div>
+		<div class="form-group">
+			{{messaggio}}
+		</div>
+		
+	</div>
+
+</body>
+</html>
